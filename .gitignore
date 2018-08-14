@@ -1,0 +1,4 @@
+# Ignore the following files
+global.R
+rsconnect/
+.Rhistory
