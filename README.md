@@ -34,11 +34,11 @@ The gene expression matrix of your PBMC samples must be in a Tab delimited forma
 
 ### RNA-Seq deconvolution
 For RNA-Seq deconvolution the gene expression values must be TPM values. 
-Deconvolution has been optimized using data from Illumina HiSeq 2000. 
+RNA-Seq deconvolution has been implemented using data from Illumina HiSeq 2000. 
 
 ### Microarray deconvolution
 For microarray deconvolution, the expression values should derive from the selection of the maximum expression value from the probes encoding for a single gene.
-Deconvolution has been optimized using data from Illumina HT-12 v4.
+Micorarray deconvolution has been implemented using data from Illumina HT-12 v4.
 
 Please, be aware that platform and pre-processing specific effects can occur.  
 
