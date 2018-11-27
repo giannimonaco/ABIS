@@ -5,7 +5,7 @@ sigRNAseq <- read.delim("data/sigmatrixRNAseq.txt", check.names = F)
 sigMicroarray <- read.delim("data/sigmatrixMicro.txt", check.names = F)
 target <- read.delim("data/target.txt", header = F)
 
-### MOD
+### MOD MOD2
 function(input, output) {
    
   dataset <- reactive( {
