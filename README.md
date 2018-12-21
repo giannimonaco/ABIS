@@ -1,6 +1,6 @@
 # ABsolute Immune Signal (ABIS) deconvolution
 
-This Shiny app performs absolute deconvolution on RNA-Seq and microarray data.
+This Shiny app performs absolute deconvolution on RNA-Seq and microarray data. It also contain a Gene Viewer page where the expression of a gene can be visualized accorss 29 immune cell types.
 
 ---
 ## INSTALLATION
@@ -28,8 +28,8 @@ Save the repository on your local machine. Open either the ui.r or the server.R 
 
 
 ---
-## USAGE
-
+## ABSOLUTE DECONVOLUTION
+ 
 The gene expression matrix of your PBMC samples must be in a Tab delimited format. The gene names must be gene symbols.
 
 ### RNA-Seq deconvolution
@@ -41,6 +41,11 @@ For microarray deconvolution, the expression values should derive from the selec
 Micorarray deconvolution has been implemented using data from Illumina HT-12 v4.
 
 Please, be aware that platform and pre-processing specific effects can occur.  
+
+---
+## GENE VIEWER
+ 
+The Gene Viewer panel shows the median gene expression value of a gene accross the 29 immune cell types contained in our dataset. It is straitforward to use, simply enter the name of a gene in one of these formats: gene symbol, Ensembl ID or Entrez ID.
 
 ---
 This software is  released under the GPL v2 license, "which guarantees end users (individuals, organizations, companies) the freedoms to use, study, share (copy), and modify the software".
