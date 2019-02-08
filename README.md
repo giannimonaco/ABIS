@@ -47,7 +47,7 @@ Please, be aware that platform and pre-processing specific effects can occur.
  
 The Gene Viewer panel shows the median gene expression value of a gene accross the 29 immune cell types contained in our dataset. It is straitforward to use, simply enter the name of a gene in one of these formats: gene symbol, Ensembl ID or Entrez ID.
 
-You could also use a standalone-html gene viewer which is available from: 10.5281/zenodo.2555129.
+You could also use a standalone-html gene viewer which is available from: https://doi.org/10.5281/zenodo.2555129.
 
 ---
 This software is  released under the GPL v2 license, "which guarantees end users (individuals, organizations, companies) the freedoms to use, study, share (copy), and modify the software".
