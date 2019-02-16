@@ -9,20 +9,20 @@ This Shiny app performs absolute deconvolution on RNA-Seq and microarray data. I
 
 ### Run it on the web!
 
-This shiny app is hosted online at the https://giannimonaco.shinyapps.io/ABIS/. It does not need R installation and it can be immediately used by just clicking on the link.
+This shiny app is hosted online at the https://giannimonaco.shinyapps.io/ABIS/. It does not need R installation and it can be immediately used by just clicking on the link. It only allows the upload of files no bigger than 5 MB.
 
 We suggest using ABIS from the web only for testing. For larger analysis we encourage to install the shiny app locally.
 
 ### Run it locally without installation
 
 You need to download the app from GitHub through R and it will run locally. However, as soon as you will close R, the app will not be available anymore and you need it to download it again.
-All the packages and dependecies need to be installed first.
+All the packages and dependecies have to be installed first.
 
 install.packages(c("shiny", "MASS"), dependencies = TRUE)
 
 runGitHub("ABIS", user="giannimonaco")
 
-### Run it locally wit installation
+### Run it locally with installation
 
 Save the repository on your local machine. Open either the ui.r or the server.R file with RStudio.
 
@@ -30,7 +30,7 @@ Save the repository on your local machine. Open either the ui.r or the server.R 
 ---
 ## ABSOLUTE DECONVOLUTION
  
-The gene expression matrix of your PBMC samples must be in a Tab delimited format. The gene names must be gene symbols.
+The gene expression matrix of your PBMC samples must be in a Tab delimited format. The gene names must be gene symbols. Check the file TPMPBMC.txt in the folder data if you are looking for an example.
 
 ### RNA-Seq deconvolution
 For RNA-Seq deconvolution the gene expression values must be TPM values. 

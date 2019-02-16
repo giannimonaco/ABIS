@@ -1,5 +1,6 @@
 library(shiny)
 library(MASS)
+options(shiny.maxRequestSize=30*1024^2)
 
 ### Deconvolution
 sigRNAseq <- read.delim("data/sigmatrixRNAseq.txt", check.names = F)
