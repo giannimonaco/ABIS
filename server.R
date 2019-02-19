@@ -19,7 +19,7 @@ function(input, output) {
   ###### DECONVOLUTION PART #########
   dataset <- reactive( {
     req(input$GeneExpr)
-    read.delim(input$GeneExpr$datapath) 
+    read.delim(input$GeneExpr$datapath, row.names = 1) 
   })
   
   
