@@ -40,7 +40,7 @@ function(input, output) {
         dataset2 <- normalize.quantiles.use.target(as.matrix(dataset()[genes,]), target[,1],copy=TRUE,subset=NULL)
         colnames(dataset2) <-colnames(dataset())
         rownames(dataset2) <- genes
-        Dec <- (apply(dataset2, 2, function(x) coef(rlm( as.matrix(sigMicroarray), x )))) *100
+        Dec <- (apply(dataset2, 2, function(x) coef(rlm( as.matrix(sigMicroarray[genes,]), x )))) *100
       }
       Dec <- signif(Dec, 3)
       cbind(rownames(Dec), Dec)
