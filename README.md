@@ -18,7 +18,7 @@ We suggest using ABIS from the web only for testing. For larger analysis we enco
 You need to download the app from GitHub through R and it will run locally. However, as soon as you will close R, the app will not be available anymore and you need it to download it again.
 All the packages and dependecies have to be installed first.
 
-install.packages(c("shiny", "MASS"), dependencies = TRUE)
+install.packages(c("shiny", "MASS", "preprocessCore"), dependencies = TRUE)
 
 runGitHub("ABIS", user="giannimonaco")
 
