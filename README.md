@@ -20,7 +20,7 @@ All the packages and dependecies have to be installed first.
 
 install.packages(c("shiny", "MASS", "preprocessCore"), dependencies = TRUE)
 
-runGitHub("ABIS", user="giannimonaco")
+shiny::runGitHub("ABIS", user="giannimonaco")
 
 ### Run it locally with installation
 
