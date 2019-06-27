@@ -1,5 +1,6 @@
 library(shiny)
 library(MASS)
+library(preprocessCore)
 options(shiny.maxRequestSize=30*1024^2)
 
 ### Deconvolution
@@ -36,7 +37,7 @@ function(input, output) {
       
       if(input$ExprType == "M"){
         genes <- intersect(rownames(dataset()), rownames(sigMicroarray))
-        dataset2 <- normalize.quantiles.use.target(as.matrix(dataset()[genes,]), target,copy=TRUE,subset=NULL)
+        dataset2 <- normalize.quantiles.use.target(as.matrix(dataset()[genes,]), target[,1],copy=TRUE,subset=NULL)
         colnames(dataset2) <-colnames(dataset())
         rownames(dataset2) <- genes
         Dec <- (apply(dataset2, 2, function(x) coef(rlm( as.matrix(sigMicroarray), x )))) *100
