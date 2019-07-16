@@ -1,6 +1,6 @@
 # ABsolute Immune Signal (ABIS) deconvolution
 
-This Shiny app performs absolute deconvolution on RNA-Seq and microarray data. It also contain a Gene Viewer page where the expression of a gene can be visualized accorss 29 immune cell types.
+This Shiny app performs absolute deconvolution on RNA-Seq and microarray data. It also contain a Gene Viewer page where the expression of a gene can be visualized across 29 immune cell types.
 
 ---
 ## INSTALLATION
@@ -16,7 +16,7 @@ We suggest using ABIS from the web only for testing. For larger analysis we enco
 ### Run it locally without installation
 
 You need to download the app from GitHub through R and it will run locally. However, as soon as you will close R, the app will not be available anymore and you need it to download it again.
-All the packages and dependecies have to be installed first.
+All the packages and dependencies have to be installed first.
 
 install.packages(c("shiny", "MASS", "preprocessCore"), dependencies = TRUE)
 
@@ -38,7 +38,7 @@ RNA-Seq deconvolution has been implemented using data from Illumina HiSeq 2000.
 
 ### Microarray deconvolution
 For microarray deconvolution, the expression values should derive from the selection of the maximum expression value from the probes encoding for a single gene.
-Micorarray deconvolution has been implemented using data from Illumina HT-12 v4.
+Microarray deconvolution has been implemented using data from Illumina HT-12 v4.
 
 Please, be aware that platform and pre-processing specific effects can occur.  
 
