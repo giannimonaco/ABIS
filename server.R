@@ -32,7 +32,7 @@ function(input, output) {
     isolate({
       if(input$ExprType == "R"){
         genes <- intersect(rownames(dataset()), rownames(sigRNAseq))
-        Dec <- (apply(dataset()[genes,], 2, function(x) coef(rlm( as.matrix(sigRNAseq[genes,]), x )))) *100
+        Dec <- (apply(dataset()[genes, , drop=F], 2, function(x) coef(rlm( as.matrix(sigRNAseq[genes,]), x )))) *100
       }           
       
       if(input$ExprType == "M"){
