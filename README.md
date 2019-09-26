@@ -30,7 +30,7 @@ Save the repository on your local machine. Open either the ui.R or the server.R 
 ---
 ## ABSOLUTE DECONVOLUTION
  
-The gene expression matrix of your PBMC samples must be in a Tab delimited format. The gene names must be gene symbols. Check the file TPMPBMC.txt in the folder data if you are looking for an example. Also, remember that quotes are not necessary.
+The gene expression matrix of your PBMC samples must be in a Tab delimited format. The gene names must be gene symbols and there should not be duplicates. Check the file TPMPBMC.txt in the folder data if you are looking for an example. Also, remember that quotes are not necessary.
 
 ### RNA-Seq deconvolution
 For RNA-Seq deconvolution the gene expression values must be TPM values. 
