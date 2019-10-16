@@ -24,7 +24,7 @@ shiny::runGitHub("ABIS", user="giannimonaco")
 
 ### Run it locally with installation
 
-Save the repository on your local machine. Open either the ui.R or the server.R file with RStudio.
+Save the repository on your local machine. Open either the ui.R or the server.R file with RStudio, then click on "Run App".
 
 
 ---
