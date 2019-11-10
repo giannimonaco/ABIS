@@ -43,13 +43,12 @@ function(input, output) {
         Dec <- (apply(dataset2, 2, function(x) coef(rlm( as.matrix(sigMicroarray[genes,]), x )))) *100
       }
       Dec <- signif(Dec, 3)
-      cbind(rownames(Dec), Dec)
     })
   })
   
-  output$TableDec <- renderDataTable({
+  output$TableDec <- renderTable({
     Dec_res()
-  })
+  },rownames = TRUE)
   
   
   

@@ -37,7 +37,7 @@ fluidPage(
                ),
                
                column(9,
-                      dataTableOutput("TableDec")
+                      tableOutput("TableDec")
                )
              )
     ),
