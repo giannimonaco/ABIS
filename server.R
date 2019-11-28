@@ -32,7 +32,7 @@ function(input, output) {
     isolate({
       if(input$ExprType == "R"){
         genes <- intersect(rownames(dataset()), rownames(sigRNAseq))
-        Dec <- (apply(dataset()[genes, , drop=F], 2, function(x) coef(rlm( as.matrix(sigRNAseq[genes,]), x )))) *100
+        Dec <- (apply(dataset()[genes, , drop=F], 2, function(x) coef(rlm( as.matrix(sigRNAseq[genes,]), x, maxit =100 )))) *100
       }           
       
       if(input$ExprType == "M"){
@@ -40,7 +40,7 @@ function(input, output) {
         dataset2 <- normalize.quantiles.use.target(as.matrix(dataset()[genes,]), target[,1],copy=TRUE,subset=NULL)
         colnames(dataset2) <-colnames(dataset())
         rownames(dataset2) <- genes
-        Dec <- (apply(dataset2, 2, function(x) coef(rlm( as.matrix(sigMicroarray[genes,]), x )))) *100
+        Dec <- (apply(dataset2, 2, function(x) coef(rlm( as.matrix(sigMicroarray[genes,]), x, maxit =100 )))) *100
       }
       Dec <- signif(Dec, 3)
     })
