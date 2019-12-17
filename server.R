@@ -58,7 +58,7 @@ function(input, output) {
       paste(input$GeneExpr$name, "_deconvolution.txt", sep = "")
     },
     content = function(file) {
-      write.table( Dec_res(), file, sep="\t", row.names = F)
+      write.table( Dec_res(), file, sep="\t", row.names = T)
     }
   )
   
