@@ -1,7 +1,7 @@
 library(shiny)
 library(MASS)
 library(preprocessCore)
-options(shiny.maxRequestSize=30*1024^2)
+options(shiny.maxRequestSize=100*1024^2)
 
 ### Deconvolution
 sigRNAseq <- read.delim("data/sigmatrixRNAseq.txt", check.names = F)
