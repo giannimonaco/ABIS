@@ -42,6 +42,13 @@ Microarray deconvolution has been implemented using data from Illumina HT-12 v4.
 
 Please, be aware that platform and pre-processing specific effects can occur.  
 
+### Output
+The output values should be percentages of immune cell type, hence within the scale of 0-100. Hence, if you use PBMC data, when you sum the scores for each sample, you should ideally get a value close to 100. 
+Note also that the method used is without constraints, hence it is likely that you will obtain negative values. In this case you can consider one of these two situations:
+ - **Negative values close to zero** -- they are likely due to technical or biological variability. Simply set them to zero or scale all the values up so that the minimum value is zero.
+ - **Very low negative values** -- there might be strong biological or technical variability for the cell type with such values. Exclude the cell type from the analisys.
+
+ 
 ---
 ## GENE VIEWER
  
