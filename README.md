@@ -30,13 +30,15 @@ Save the repository on your local machine. Open either the ui.R or the server.R 
 ---
 ## ABSOLUTE DECONVOLUTION
  
-The gene expression matrix of your PBMC samples must be in a Tab delimited format. The gene names must be gene symbols and there should not be duplicates. Check the file TPMPBMC.txt in the folder data if you are looking for an example. Also, remember that quotes are not necessary.
+### Input file
+The gene expression matrix of your PBMC samples must be in a Tab delimited format. The gene names must be gene symbols and there should not be duplicates. In case you use Excel to check or modify your file, be aware that Excel automatically converts some gene names to date (for example MARCH1 becomes 1-Mar and SEPT2 becomes 2-Sept). This can also create duplicated names when you export the file in TXT file (for example both MARC1 and MARCH1 become 1-Mar).
+Check the file TPMPBMC.txt in the folder data if you are looking for an example. 
 
-### RNA-Seq deconvolution
+#### RNA-Seq deconvolution
 For RNA-Seq deconvolution the gene expression values must be TPM values. 
 RNA-Seq deconvolution has been implemented using data from Illumina HiSeq 2000. 
 
-### Microarray deconvolution
+#### Microarray deconvolution
 For microarray deconvolution, the expression values should derive from the selection of the maximum expression value from the probes encoding for a single gene.
 Microarray deconvolution has been implemented using data from Illumina HT-12 v4.
 
